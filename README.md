@@ -31,3 +31,20 @@ Open a finder window, then select the "Go" dropdown menu. In this menu please pr
 ### 5. Extract the bootstrap zip file you just downloaded to your desktop or elsewhere and you will see a file called "bootstrap"
 ### 6. Open the "bootstrap" file and drag all contents into your GenesisX data directory
 ### 7. Start your wallet client.
+
+<br/>
+
+## FAQ
+
+### Q:
+My wallet seems to have become stuck syncing and says remains at X hours left. It’s been many hours and status hasn't changed. What do I do?
+
+### A:
+This may happen due to connecting to some bad peers or your chain has been corrupted somehow.
+First, try simply restarting the wallet then after it's synced up, check if you are on the right chain via a block explorer:
+http://xgs.ccore.online/
+http://45.77.214.49/
+If you are on the right chain but isn't syncing the newer blocks, please follow solution steps outlined
+below to resync cleanly off the network with a new peers.dat:
+
+Also, ensure that your genesisx.conf doesn't have any connect= or addnodes= lines unless you know why they are there. 
