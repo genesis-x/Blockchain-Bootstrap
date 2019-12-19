@@ -45,6 +45,10 @@ First, try simply restarting the wallet then after it's synced up, check if you 
 [Explorer 1](http://xgs.ccore.online/) <br/>
 [Explorer 2](http://45.77.214.49/) <br/>
 If you are on the right chain but isn't syncing the newer blocks, please follow solution steps outlined
-below to resync cleanly off the network with a new peers.dat:
+below to resync cleanly off the network with a new peers.dat: <br/>
+
+Inside GUI Wallet: <br/>
+"Tools > Wallet Repair > Delete Local Blockchain Folders (-resync)" to initiate the full re-sync. <br/>
+(unless you have a known good backup of the blockchain that you know how to restore)
 
 Also, ensure that your genesisx.conf doesn't have any connect= or addnodes= lines unless you know why they are there. 
