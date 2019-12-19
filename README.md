@@ -42,8 +42,8 @@ My wallet seems to have become stuck syncing and says remains at X hours left. I
 ### A:
 This may happen due to connecting to some bad peers or your chain has been corrupted somehow.
 First, try simply restarting the wallet then after it's synced up, check if you are on the right chain via a block explorer:
-http://xgs.ccore.online/
-http://45.77.214.49
+[Explorer 1](http://xgs.ccore.online/)
+[Explorer 2](http://45.77.214.49/)
 If you are on the right chain but isn't syncing the newer blocks, please follow solution steps outlined
 below to resync cleanly off the network with a new peers.dat:
 
