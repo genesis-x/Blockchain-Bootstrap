@@ -1,4 +1,4 @@
-# GENESISX BOOTSTRAP <img src="https://genesisx.network/img/logo-small.png" alt="GenesisX Logo" width="50" height="auto">
+<img src="http://download.genesisx.network/bootstrapHeaderImage.png" alt="GenesisXHeaderImage" min-width="250" height="auto">
 
 ### 1. Stop/shutdown your wallet client if it is running.
 <br/>
