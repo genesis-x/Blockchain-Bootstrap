@@ -52,3 +52,9 @@ Inside GUI Wallet: <br/>
 (unless you have a known good backup of the blockchain that you know how to restore)
 
 Also, ensure that your genesisx.conf doesn't have any connect= or addnodes= lines unless you know why they are there. 
+
+### Q:
+Is this safe?
+
+### A:
+Yes, the above method is safe. The download contains only raw blockchain data and the client verifies this on import. Do not download the blockchain from unofficial sources, especially if they provide *.rev and *.sst files. These files are not verified and can contain malicious edits.
