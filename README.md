@@ -1,4 +1,4 @@
-<img src="http://downloads.genesisx.network/bootstrapHeaderImage.png" width="250" height="auto">
+<img src="http://downloads.genesisx.network/bootstrapHeaderImage.png" min-width="750" height="auto">
 
 ### 1. Stop/shutdown your wallet client if it is running.
 <br/>
