@@ -37,6 +37,13 @@ Open a finder window, then select the "Go" dropdown menu. In this menu please pr
 ## FAQ
 
 ### Q:
+Is this safe?
+
+### A:
+Yes, the above method is safe. The download contains only raw blockchain data and the client verifies this on import. Do not download the blockchain from unofficial sources, especially if they provide *.rev and *.sst files. These files are not verified and can contain malicious edits.
+
+
+### Q:
 My wallet seems to have become stuck syncing and says remains at X hours left. It’s been many hours and status hasn't changed. What do I do?
 
 ### A:
@@ -53,8 +60,9 @@ Inside GUI Wallet: <br/>
 
 Also, ensure that your genesisx.conf doesn't have any connect= or addnodes= lines unless you know why they are there. 
 
+
 ### Q:
-Is this safe?
+Do I really need a bootstrap?
 
 ### A:
-Yes, the above method is safe. The download contains only raw blockchain data and the client verifies this on import. Do not download the blockchain from unofficial sources, especially if they provide *.rev and *.sst files. These files are not verified and can contain malicious edits.
+In short, no. The purpose of bootstrap is to provide an up-to-date blockchain without the time and resource intensive tasks of verifying each block and/or reindexing the blockchain.
