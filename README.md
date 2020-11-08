@@ -27,9 +27,9 @@ Open a finder window, then select the "Go" dropdown menu. In this menu please pr
 
 <img src="http://downloads.genesisx.network/folder.png" alt="GenesisX Folder" width="450" height="auto">
 
-### 4. Download the latest bootstrap from [here](http://downloads.genesisx.network/bootstrap.zip)
-### 5. Extract the bootstrap zip file you just downloaded to your desktop or elsewhere and you will see a file called "bootstrap"
-### 6. Open the "bootstrap" file and drag all contents into your GenesisX data directory
+### 4. Download the latest bootstrap from [here](https://ln2.sync.com/dl/2af65f300/4tyidsbi-hyj7dsg3-f3i8f8n8-9ff4en4a)
+### 5. Extract the bootstrap rar file you just downloaded to your desktop or elsewhere and you will see a file containing the word "bootstrap".
+### 6. Open the "bootstrap" file and drag all contents into your GenesisX data directory.
 ### 7. Start your wallet client.
 
 <br/>
@@ -50,7 +50,7 @@ My wallet seems to have become stuck syncing and says remains at X hours left. I
 This may happen due to connecting to some bad peers or your chain has been corrupted somehow.
 First, try simply restarting the wallet then after it's synced up, check if you are on the right chain via a block explorer: <br/>
 [Explorer 1](http://xgs.ccore.online/) <br/>
-[Explorer 2](http://45.77.214.49/) <br/>
+[Explorer 2](https://chains.trittium.cc/XGS/blocks) <br/>
 If you are on the right chain but isn't syncing the newer blocks, please follow solution steps outlined
 below to resync cleanly off the network with a new peers.dat: <br/>
 
@@ -58,7 +58,15 @@ Inside GUI Wallet: <br/>
 "Tools > Wallet Repair > Delete Local Blockchain Folders (-resync)" to initiate the full re-sync. <br/>
 (unless you have a known good backup of the blockchain that you know how to restore)
 
-Also, ensure that your genesisx.conf doesn't have any connect= or addnodes= lines unless you know why they are there. 
+Also, ensure that your genesisx.conf has valid connect= or addnodes=. We have added ones that we are running off. Remove if they no longer serve as accurate.
+
+### Q:
+How do i know i am on the right chain?
+
+### A:
+In wallet debug panel enter "getblockhash 1272456".
+You should get the block hash of "4b797989abfe884b6df1e511279a9ce03c4749b6e2876328c1df175aa341058c"
+If not you will need to resync the wallet with a new peers.dat file.
 
 
 ### Q:
