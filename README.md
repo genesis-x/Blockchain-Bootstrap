@@ -23,14 +23,21 @@ Open a finder window, then select the "Go" dropdown menu. In this menu please pr
 
 ### 3. Delete ONLY the 4 folders and 1 file shown below:
 ### (blocks, chainstate, sporks, zerocoin, and peers.dat) folders from your data directory.
+### Update genesisx.conf file to contain only these addnodes
+    `addnode=144.91.114.36`
+    `addnode=167.86.97.185`
+    `addnode=144.126.139.46`
+    `addnode=144.126.139.47`
+    `addnode=194.233.64.62`
+### Remove everything else in the conf file.
 ### (**Do NOT delete backups or wallet.dat**)
 
 <img src="http://downloads.genesisx.network/folder.png" alt="GenesisX Folder" width="450" height="auto">
 
-### 4. Download the latest bootstrap from [here](https://ln2.sync.com/dl/2af65f300/4tyidsbi-hyj7dsg3-f3i8f8n8-9ff4en4a)
-### 5. Extract the bootstrap rar file you just downloaded to your desktop or elsewhere and you will see a file containing the word "bootstrap".
+### 4. Download the latest bootstrap from [here](https://ln4.sync.com/dl/87aab65d0/gmed2z9m-f8mr42zn-wqcdgzhw-iy8chup7)
+### 5. Extract the bootstrap 7-Zip file you just downloaded to your desktop or elsewhere and you will see a file containing the word "bootstrap".
 ### 6. Open the "bootstrap" file and drag all contents into your GenesisX data directory.
-### 7. Start your wallet client.
+### 7. Start your wallet client and sync from block 0.
 
 <br/>
 
@@ -64,8 +71,8 @@ Also, ensure that your genesisx.conf has valid connect= or addnodes=. We have ad
 How do i know i am on the right chain?
 
 ### A:
-In wallet debug panel enter "getblockhash 1272456".
-You should get the block hash of "4b797989abfe884b6df1e511279a9ce03c4749b6e2876328c1df175aa341058c"
+In wallet debug panel enter "getblockhash 1651500".
+You should get the block hash of "ee1ce6cd99f95ead216267431158d6607226bd647ba66be740d980ab803293e2"
 If not you will need to resync the wallet with a new peers.dat file.
 
 
